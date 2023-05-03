@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "interactivemap",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GrandSir/InteractiveMap",
+      "state" : {
+        "branch" : "main",
+        "revision" : "04d63979f325cbc7dee42acd091fa18e5b8db021"
+      }
+    }
+  ],
+  "version" : 2
+}
