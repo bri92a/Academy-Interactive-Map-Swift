@@ -11,6 +11,7 @@ import SwiftUI
 struct Academy_Interactive_MapApp: App {
     var body: some Scene {
         WindowGroup {
+            
             ContentView()
         }
     }
