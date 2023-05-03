@@ -12,34 +12,106 @@ struct ContentView: View {
     @State private var clickedPath = PathData()
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading){
+            VStack{
                 Text("Hello World")
                     .toolbar {
                         ToolbarItem(placement: .automatic) {
                             Menu {
                                 Button(action: {}, label: {
-                                    Text("Add File")
+                                    Label(
+                                        title: { Text("First Floor")},
+                                        icon: { Image(systemName: "doc")
+                                        })
                                 })
                                 Button(action: {}, label: {
-                                    Text("Rate App")
+                                    Label(
+                                        title: { Text("Second Floor")},
+                                        icon: { Image(systemName: "star")
+                                        })
                                 })
                                 Button(action: {}, label: {
-                                    Text("Settings")
+                                    Label(
+                                        title: { Text("Third Floor")},
+                                        icon: { Image(systemName: "gear")
+                                        })
                                 })
-                                Button(action: {}, label: {
-                                    Text("Privacy Policy")
-                                })
+                                
+                                Menu {
+                                    Button(action: {}, label: {
+                                        Text("Room 1")
+                                    })
+                                    Button(action: {}, label: {
+                                        Text("Room 2")
+                                        
+                                    })
+                                } label: {
+                                    Text("Learning Spaces")
+                                    
+                                }
+                                Menu {
+                                    Button(action: {}, label: {
+                                        Text("Room 1")
+                                    })
+                                    Button(action: {}, label: {
+                                        Text("Room 2")
+                                        
+                                    })
+                                } label: {
+                                    Text("Idea Rooms")
+                                    
+                                }
+                                Menu {
+                                    Button(action: {}, label: {
+                                        Text("Room 1")
+                                    })
+                                    Button(action: {}, label: {
+                                        Text("Room 2")
+                                        
+                                    })
+                                } label: {
+                                    Text("Admin & Faculty")
+                                    
+                                }
+                                Menu {
+                                    Button(action: {}, label: {
+                                        Text("Room 1")
+                                    })
+                                    Button(action: {}, label: {
+                                        Text("Room 2")
+                                        
+                                    })
+                                } label: {
+                                    Text("Science Labs")
+                                    
+                                }
+                                Menu {
+                                    Button(action: {}, label: {
+                                        Text("Room 1")
+                                    })
+                                    Button(action: {}, label: {
+                                        Text("Room 2")
+                                        
+                                    })
+                                } label: {
+                                    Text("Project Resource Areas")
+                                    
+                                }
                             } label: {
-                                Label(
-                                    title: { Text("Add")},
-                                    icon: { Image(systemName: "plus")}
-                                )}
+                                    Label(
+                                        title: { Text("Add") },
+                                        icon: { Image(systemName: "plus")
+                                        })
+                                }
+                            
+                            
+                            
                         }
                     }
                     .navigationTitle("Academy Interactive Map")
                 
             }
         }
+        
         
         VStack{
             Text(clickedPath.name.isEmpty ? "" : "\(clickedPath.name) is clicked!" )
@@ -61,8 +133,8 @@ struct ContentView: View {
                 .animation(.easeInOut(duration: 0.3), value: clickedPath)} }
     }
     
-                        }
-
+    
+    
     
     
     struct ContentView_Previews: PreviewProvider {
@@ -70,3 +142,4 @@ struct ContentView: View {
             ContentView()
         }
     }
+}
