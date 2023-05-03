@@ -12,10 +12,10 @@ struct ContentView: View {
     @State private var clickedPath = PathData()
     var body: some View {
         NavigationView {
-            VStack {
+            VStack(alignment: .leading){
                 Text("Hello World")
                     .toolbar {
-                        ToolbarItem(placement: .navigationBarTrailing) {
+                        ToolbarItem(placement: .automatic) {
                             Menu {
                                 Button(action: {}, label: {
                                     Text("Add File")
@@ -33,36 +33,37 @@ struct ContentView: View {
                                 Label(
                                     title: { Text("Add")},
                                     icon: { Image(systemName: "plus")}
-                                    )
-                            }
+                                )}
                         }
                     }
-            }
-            .navigationTitle("Academy Interactive Map")
-        }
-            VStack {
+                    .navigationTitle("Academy Interactive Map")
                 
-                Text(clickedPath.name.isEmpty ? "" : "\(clickedPath.name) is clicked!" )
-                    .font(.largeTitle)
-                    .padding(.bottom, 15)
-                
-                InteractiveMap(svgName: "Roller Intake 2") { pathData in // is a PathData
-                    InteractiveShape(pathData)
-                        .stroke(clickedPath == pathData ? .cyan : .red, lineWidth: 1)
-                        .shadow(color: clickedPath == pathData ? .cyan : .red,  radius: 3)
-                        .shadow(color: clickedPath == pathData ? .cyan : .clear , radius: 3) // to increase the glow amount
-                        .background(InteractiveShape(pathData).fill(Color(white: 0.15))) // filling the shapes
-                        .shadow(color: clickedPath == pathData ? .black : .clear , radius: 5, y: 1) // for depth
-                    
-                        .onTapGesture {
-                            clickedPath = pathData
-                        }
-                        .zIndex(clickedPath == pathData ? 2 : 1) // this is REQUIRED because InteractiveShapes overlap, resulting in an ugly appearance
-                        .animation(.easeInOut(duration: 0.3), value: clickedPath)
-                }
             }
         }
+        
+        VStack{
+            Text(clickedPath.name.isEmpty ? "" : "\(clickedPath.name) is clicked!" )
+                .font(.largeTitle)
+                .padding(.bottom, 15)
+            
+            InteractiveMap(svgName: "Roller Intake 2") { pathData in // is a PathData
+                InteractiveShape(pathData)
+                    .stroke(clickedPath == pathData ? .cyan : .red, lineWidth: 1)
+                    .shadow(color: clickedPath == pathData ? .cyan : .red,  radius: 3)
+                    .shadow(color: clickedPath == pathData ? .cyan : .clear , radius: 3) // to increase the glow amount
+                    .background(InteractiveShape(pathData).fill(Color(white: 0.15))) // filling the shapes
+                    .shadow(color: clickedPath == pathData ? .black : .clear , radius: 5, y: 1) // for depth
+                
+                    .onTapGesture {
+                        clickedPath = pathData
+                    }
+                    .zIndex(clickedPath == pathData ? 2 : 1) // this is REQUIRED because InteractiveShapes overlap, resulting in an ugly appearance
+                .animation(.easeInOut(duration: 0.3), value: clickedPath)} }
     }
+    
+                        }
+
+    
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
