@@ -13,27 +13,34 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack{
-                Text("Hello World")
+                Text(clickedPath.name.isEmpty ? "" : "\(clickedPath.name) is clicked!" )
+                    .font(.largeTitle)
+                    .padding(.bottom, 15)
+                
+                InteractiveMap(svgName: "Roller Intake 2") { pathData in // is a PathData
+                    InteractiveShape(pathData)
+                        .stroke(clickedPath == pathData ? .cyan : .red, lineWidth: 1)
+                        .shadow(color: clickedPath == pathData ? .cyan : .red,  radius: 3)
+                        .shadow(color: clickedPath == pathData ? .cyan : .clear , radius: 3) // to increase the glow amount
+                        .background(InteractiveShape(pathData).fill(Color(white: 0.15))) // filling the shapes
+                        .shadow(color: clickedPath == pathData ? .black : .clear , radius: 5, y: 1) // for depth
+                    
+                        .onTapGesture {
+                            clickedPath = pathData
+                        }
+                        .zIndex(clickedPath == pathData ? 2 : 1) // this is REQUIRED because InteractiveShapes overlap, resulting in an ugly appearance
+                    .animation(.easeInOut(duration: 0.3), value: clickedPath)}
                     .toolbar {
                         ToolbarItem(placement: .automatic) {
                             Menu {
                                 Button(action: {}, label: {
-                                    Label(
-                                        title: { Text("First Floor")},
-                                        icon: { Image(systemName: "doc")
-                                        })
+                                    Text("First Floor")
                                 })
                                 Button(action: {}, label: {
-                                    Label(
-                                        title: { Text("Second Floor")},
-                                        icon: { Image(systemName: "star")
-                                        })
+                                    Text("Second Floor")
                                 })
                                 Button(action: {}, label: {
-                                    Label(
-                                        title: { Text("Third Floor")},
-                                        icon: { Image(systemName: "gear")
-                                        })
+                                    Text("Third Floor")
                                 })
                                 
                                 Menu {
@@ -107,30 +114,10 @@ struct ContentView: View {
                             
                         }
                     }
-                    .navigationTitle("Academy Interactive Map")
+                    .navigationTitle("PAHS Interactive Map")
                 
             }
         }
-        
-        
-        VStack{
-            Text(clickedPath.name.isEmpty ? "" : "\(clickedPath.name) is clicked!" )
-                .font(.largeTitle)
-                .padding(.bottom, 15)
-            
-            InteractiveMap(svgName: "Roller Intake 2") { pathData in // is a PathData
-                InteractiveShape(pathData)
-                    .stroke(clickedPath == pathData ? .cyan : .red, lineWidth: 1)
-                    .shadow(color: clickedPath == pathData ? .cyan : .red,  radius: 3)
-                    .shadow(color: clickedPath == pathData ? .cyan : .clear , radius: 3) // to increase the glow amount
-                    .background(InteractiveShape(pathData).fill(Color(white: 0.15))) // filling the shapes
-                    .shadow(color: clickedPath == pathData ? .black : .clear , radius: 5, y: 1) // for depth
-                
-                    .onTapGesture {
-                        clickedPath = pathData
-                    }
-                    .zIndex(clickedPath == pathData ? 2 : 1) // this is REQUIRED because InteractiveShapes overlap, resulting in an ugly appearance
-                .animation(.easeInOut(duration: 0.3), value: clickedPath)} }
     }
     
     
