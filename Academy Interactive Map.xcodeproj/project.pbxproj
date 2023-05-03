@@ -14,6 +14,9 @@
 		340F647F2A01C49700C50263 /* Academy_Interactive_MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F647E2A01C49700C50263 /* Academy_Interactive_MapTests.swift */; };
 		340F64892A01C49700C50263 /* Academy_Interactive_MapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F64882A01C49700C50263 /* Academy_Interactive_MapUITests.swift */; };
 		340F648B2A01C49700C50263 /* Academy_Interactive_MapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F648A2A01C49700C50263 /* Academy_Interactive_MapUITestsLaunchTests.swift */; };
+		3468294E2A02E804004D9F5B /* tr.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3468294D2A02E804004D9F5B /* tr.svg */; };
+		346829502A02EAF2004D9F5B /* Roller Intake 2.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3468294F2A02EAF2004D9F5B /* Roller Intake 2.svg */; };
+		346829532A030048004D9F5B /* LearningSpacePhotos in Resources */ = {isa = PBXBuildFile; fileRef = 346829522A030047004D9F5B /* LearningSpacePhotos */; };
 		3475A66C2A02BE0D000C74DA /* InteractiveMap in Frameworks */ = {isa = PBXBuildFile; productRef = 3475A66B2A02BE0D000C74DA /* InteractiveMap */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,9 @@
 		340F64842A01C49700C50263 /* Academy Interactive MapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Academy Interactive MapUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		340F64882A01C49700C50263 /* Academy_Interactive_MapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Academy_Interactive_MapUITests.swift; sourceTree = "<group>"; };
 		340F648A2A01C49700C50263 /* Academy_Interactive_MapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Academy_Interactive_MapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3468294D2A02E804004D9F5B /* tr.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = tr.svg; path = "../../../Downloads/InteractiveMap-main/Maps/tr.svg"; sourceTree = "<group>"; };
+		3468294F2A02EAF2004D9F5B /* Roller Intake 2.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Roller Intake 2.svg"; path = "../../../Downloads/Roller Intake 2.svg"; sourceTree = "<group>"; };
+		346829522A030047004D9F5B /* LearningSpacePhotos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LearningSpacePhotos; path = ../../Downloads/LearningSpacePhotos; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				340F646B2A01C49400C50263 /* Academy Interactive Map */,
+				346829522A030047004D9F5B /* LearningSpacePhotos */,
+				3468294C2A02E79F004D9F5B /* Maps */,
 				340F647D2A01C49700C50263 /* Academy Interactive MapTests */,
 				340F64872A01C49700C50263 /* Academy Interactive MapUITests */,
 				340F646A2A01C49400C50263 /* Products */,
@@ -129,6 +137,15 @@
 				340F648A2A01C49700C50263 /* Academy_Interactive_MapUITestsLaunchTests.swift */,
 			);
 			path = "Academy Interactive MapUITests";
+			sourceTree = "<group>";
+		};
+		3468294C2A02E79F004D9F5B /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				3468294D2A02E804004D9F5B /* tr.svg */,
+				3468294F2A02EAF2004D9F5B /* Roller Intake 2.svg */,
+			);
+			path = Maps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +260,9 @@
 			files = (
 				340F64752A01C49700C50263 /* Preview Assets.xcassets in Resources */,
 				340F64712A01C49700C50263 /* Assets.xcassets in Resources */,
+				3468294E2A02E804004D9F5B /* tr.svg in Resources */,
+				346829502A02EAF2004D9F5B /* Roller Intake 2.svg in Resources */,
+				346829532A030048004D9F5B /* LearningSpacePhotos in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
