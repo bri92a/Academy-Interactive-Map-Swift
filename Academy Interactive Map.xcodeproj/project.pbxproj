@@ -17,6 +17,11 @@
 		3468294E2A02E804004D9F5B /* tr.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3468294D2A02E804004D9F5B /* tr.svg */; };
 		346829502A02EAF2004D9F5B /* Roller Intake 2.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3468294F2A02EAF2004D9F5B /* Roller Intake 2.svg */; };
 		346829532A030048004D9F5B /* LearningSpacePhotos in Resources */ = {isa = PBXBuildFile; fileRef = 346829522A030047004D9F5B /* LearningSpacePhotos */; };
+		346829552A03316E004D9F5B /* FirstFloor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346829542A03316E004D9F5B /* FirstFloor.swift */; };
+		346829572A03318E004D9F5B /* SecondFloor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346829562A03318E004D9F5B /* SecondFloor.swift */; };
+		346829592A0331A1004D9F5B /* ThirdFloor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346829582A0331A1004D9F5B /* ThirdFloor.swift */; };
+		3468295B2A033773004D9F5B /* us.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3468295A2A033773004D9F5B /* us.svg */; };
+		3468295D2A033786004D9F5B /* italy.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3468295C2A033786004D9F5B /* italy.svg */; };
 		3475A66C2A02BE0D000C74DA /* InteractiveMap in Frameworks */ = {isa = PBXBuildFile; productRef = 3475A66B2A02BE0D000C74DA /* InteractiveMap */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +57,11 @@
 		3468294D2A02E804004D9F5B /* tr.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = tr.svg; path = "../../../Downloads/InteractiveMap-main/Maps/tr.svg"; sourceTree = "<group>"; };
 		3468294F2A02EAF2004D9F5B /* Roller Intake 2.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Roller Intake 2.svg"; path = "../../../Downloads/Roller Intake 2.svg"; sourceTree = "<group>"; };
 		346829522A030047004D9F5B /* LearningSpacePhotos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LearningSpacePhotos; path = ../../Downloads/LearningSpacePhotos; sourceTree = "<group>"; };
+		346829542A03316E004D9F5B /* FirstFloor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstFloor.swift; sourceTree = "<group>"; };
+		346829562A03318E004D9F5B /* SecondFloor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondFloor.swift; sourceTree = "<group>"; };
+		346829582A0331A1004D9F5B /* ThirdFloor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdFloor.swift; sourceTree = "<group>"; };
+		3468295A2A033773004D9F5B /* us.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = us.svg; path = "../../../Downloads/InteractiveMap-main/Maps/us.svg"; sourceTree = "<group>"; };
+		3468295C2A033786004D9F5B /* italy.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = italy.svg; path = "../../../Downloads/InteractiveMap-main/Maps/italy.svg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +117,9 @@
 			children = (
 				340F646C2A01C49400C50263 /* Academy_Interactive_MapApp.swift */,
 				340F646E2A01C49400C50263 /* ContentView.swift */,
+				346829542A03316E004D9F5B /* FirstFloor.swift */,
+				346829562A03318E004D9F5B /* SecondFloor.swift */,
+				346829582A0331A1004D9F5B /* ThirdFloor.swift */,
 				340F64702A01C49700C50263 /* Assets.xcassets */,
 				340F64722A01C49700C50263 /* Academy_Interactive_Map.entitlements */,
 				340F64732A01C49700C50263 /* Preview Content */,
@@ -142,6 +155,8 @@
 		3468294C2A02E79F004D9F5B /* Maps */ = {
 			isa = PBXGroup;
 			children = (
+				3468295C2A033786004D9F5B /* italy.svg */,
+				3468295A2A033773004D9F5B /* us.svg */,
 				3468294D2A02E804004D9F5B /* tr.svg */,
 				3468294F2A02EAF2004D9F5B /* Roller Intake 2.svg */,
 			);
@@ -260,7 +275,9 @@
 			files = (
 				340F64752A01C49700C50263 /* Preview Assets.xcassets in Resources */,
 				340F64712A01C49700C50263 /* Assets.xcassets in Resources */,
+				3468295B2A033773004D9F5B /* us.svg in Resources */,
 				3468294E2A02E804004D9F5B /* tr.svg in Resources */,
+				3468295D2A033786004D9F5B /* italy.svg in Resources */,
 				346829502A02EAF2004D9F5B /* Roller Intake 2.svg in Resources */,
 				346829532A030048004D9F5B /* LearningSpacePhotos in Resources */,
 			);
@@ -288,6 +305,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				340F646F2A01C49400C50263 /* ContentView.swift in Sources */,
+				346829552A03316E004D9F5B /* FirstFloor.swift in Sources */,
+				346829592A0331A1004D9F5B /* ThirdFloor.swift in Sources */,
+				346829572A03318E004D9F5B /* SecondFloor.swift in Sources */,
 				340F646D2A01C49400C50263 /* Academy_Interactive_MapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

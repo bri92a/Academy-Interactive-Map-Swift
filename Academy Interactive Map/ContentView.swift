@@ -8,12 +8,21 @@
 import SwiftUI
 import InteractiveMap
 
+enum SheetTypes: Identifiable {
+    case first, second, third
+    
+    var id: Int {
+        hashValue
+    }
+}
+
 struct ContentView: View {
     @State private var clickedPath = PathData()
+    @State private var activeSheet : SheetTypes?
     var body: some View {
         NavigationView {
             VStack{
-                Text(clickedPath.name.isEmpty ? "" : "\(clickedPath.name) is clicked!" )
+                Text(clickedPath.name.isEmpty ? "" : "\(clickedPath.name)" )
                     .font(.largeTitle)
                     .padding(.bottom, 15)
                 
@@ -30,16 +39,30 @@ struct ContentView: View {
                         }
                         .zIndex(clickedPath == pathData ? 2 : 1) // this is REQUIRED because InteractiveShapes overlap, resulting in an ugly appearance
                     .animation(.easeInOut(duration: 0.3), value: clickedPath)}
-                    .toolbar {
+                
+                .sheet(item: self.$activeSheet){ item in
+                    switch item {
+                    case .first:
+                        FirstFloor()
+                    case .second:
+                        SecondFloor()
+                    case .third:
+                        ThirdFloor()
+                    }
+                    
+                    
+                }
+                
+                .toolbar {
                         ToolbarItem(placement: .automatic) {
                             Menu {
-                                Button(action: {}, label: {
+                                Button(action: { self.activeSheet = .first}, label: {
                                     Text("First Floor")
                                 })
-                                Button(action: {}, label: {
+                                Button(action: { self.activeSheet = .second}, label: {
                                     Text("Second Floor")
                                 })
-                                Button(action: {}, label: {
+                                Button(action: { self.activeSheet = .third}, label: {
                                     Text("Third Floor")
                                 })
                                 
