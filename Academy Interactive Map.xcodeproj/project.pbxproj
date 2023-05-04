@@ -22,6 +22,16 @@
 		346829592A0331A1004D9F5B /* ThirdFloor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346829582A0331A1004D9F5B /* ThirdFloor.swift */; };
 		3468295B2A033773004D9F5B /* us.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3468295A2A033773004D9F5B /* us.svg */; };
 		3468295D2A033786004D9F5B /* italy.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3468295C2A033786004D9F5B /* italy.svg */; };
+		346829612A035861004D9F5B /* ls5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346829602A035861004D9F5B /* ls5.swift */; };
+		346829632A035882004D9F5B /* ls6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346829622A035882004D9F5B /* ls6.swift */; };
+		346829652A035890004D9F5B /* ls8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346829642A035890004D9F5B /* ls8.swift */; };
+		346829672A03589F004D9F5B /* ls11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346829662A03589F004D9F5B /* ls11.swift */; };
+		346829692A0358AF004D9F5B /* ls12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346829682A0358AF004D9F5B /* ls12.swift */; };
+		3468296B2A0358C6004D9F5B /* ls14-16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3468296A2A0358C6004D9F5B /* ls14-16.swift */; };
+		3468296D2A0358D9004D9F5B /* ls17&18.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3468296C2A0358D9004D9F5B /* ls17&18.swift */; };
+		3468296F2A0358EC004D9F5B /* ls19.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3468296E2A0358EC004D9F5B /* ls19.swift */; };
+		346829712A035903004D9F5B /* ls20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346829702A035903004D9F5B /* ls20.swift */; };
+		346829732A035918004D9F5B /* ls21.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346829722A035918004D9F5B /* ls21.swift */; };
 		3475A66C2A02BE0D000C74DA /* InteractiveMap in Frameworks */ = {isa = PBXBuildFile; productRef = 3475A66B2A02BE0D000C74DA /* InteractiveMap */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +72,16 @@
 		346829582A0331A1004D9F5B /* ThirdFloor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdFloor.swift; sourceTree = "<group>"; };
 		3468295A2A033773004D9F5B /* us.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = us.svg; path = "../../../Downloads/InteractiveMap-main/Maps/us.svg"; sourceTree = "<group>"; };
 		3468295C2A033786004D9F5B /* italy.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = italy.svg; path = "../../../Downloads/InteractiveMap-main/Maps/italy.svg"; sourceTree = "<group>"; };
+		346829602A035861004D9F5B /* ls5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ls5.swift; sourceTree = "<group>"; };
+		346829622A035882004D9F5B /* ls6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ls6.swift; sourceTree = "<group>"; };
+		346829642A035890004D9F5B /* ls8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ls8.swift; sourceTree = "<group>"; };
+		346829662A03589F004D9F5B /* ls11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ls11.swift; sourceTree = "<group>"; };
+		346829682A0358AF004D9F5B /* ls12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ls12.swift; sourceTree = "<group>"; };
+		3468296A2A0358C6004D9F5B /* ls14-16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ls14-16.swift"; sourceTree = "<group>"; };
+		3468296C2A0358D9004D9F5B /* ls17&18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ls17&18.swift"; sourceTree = "<group>"; };
+		3468296E2A0358EC004D9F5B /* ls19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ls19.swift; sourceTree = "<group>"; };
+		346829702A035903004D9F5B /* ls20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ls20.swift; sourceTree = "<group>"; };
+		346829722A035918004D9F5B /* ls21.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ls21.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +137,8 @@
 			children = (
 				340F646C2A01C49400C50263 /* Academy_Interactive_MapApp.swift */,
 				340F646E2A01C49400C50263 /* ContentView.swift */,
-				346829542A03316E004D9F5B /* FirstFloor.swift */,
-				346829562A03318E004D9F5B /* SecondFloor.swift */,
-				346829582A0331A1004D9F5B /* ThirdFloor.swift */,
+				3468295E2A034775004D9F5B /* Floors */,
+				3468295F2A035829004D9F5B /* LearningSpaces */,
 				340F64702A01C49700C50263 /* Assets.xcassets */,
 				340F64722A01C49700C50263 /* Academy_Interactive_Map.entitlements */,
 				340F64732A01C49700C50263 /* Preview Content */,
@@ -161,6 +180,33 @@
 				3468294F2A02EAF2004D9F5B /* Roller Intake 2.svg */,
 			);
 			path = Maps;
+			sourceTree = "<group>";
+		};
+		3468295E2A034775004D9F5B /* Floors */ = {
+			isa = PBXGroup;
+			children = (
+				346829542A03316E004D9F5B /* FirstFloor.swift */,
+				346829562A03318E004D9F5B /* SecondFloor.swift */,
+				346829582A0331A1004D9F5B /* ThirdFloor.swift */,
+			);
+			path = Floors;
+			sourceTree = "<group>";
+		};
+		3468295F2A035829004D9F5B /* LearningSpaces */ = {
+			isa = PBXGroup;
+			children = (
+				346829602A035861004D9F5B /* ls5.swift */,
+				346829622A035882004D9F5B /* ls6.swift */,
+				346829642A035890004D9F5B /* ls8.swift */,
+				346829662A03589F004D9F5B /* ls11.swift */,
+				346829682A0358AF004D9F5B /* ls12.swift */,
+				3468296A2A0358C6004D9F5B /* ls14-16.swift */,
+				3468296C2A0358D9004D9F5B /* ls17&18.swift */,
+				3468296E2A0358EC004D9F5B /* ls19.swift */,
+				346829702A035903004D9F5B /* ls20.swift */,
+				346829722A035918004D9F5B /* ls21.swift */,
+			);
+			path = LearningSpaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,11 +350,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346829632A035882004D9F5B /* ls6.swift in Sources */,
 				340F646F2A01C49400C50263 /* ContentView.swift in Sources */,
 				346829552A03316E004D9F5B /* FirstFloor.swift in Sources */,
+				346829652A035890004D9F5B /* ls8.swift in Sources */,
+				346829712A035903004D9F5B /* ls20.swift in Sources */,
+				346829672A03589F004D9F5B /* ls11.swift in Sources */,
+				346829692A0358AF004D9F5B /* ls12.swift in Sources */,
+				3468296D2A0358D9004D9F5B /* ls17&18.swift in Sources */,
 				346829592A0331A1004D9F5B /* ThirdFloor.swift in Sources */,
 				346829572A03318E004D9F5B /* SecondFloor.swift in Sources */,
+				346829732A035918004D9F5B /* ls21.swift in Sources */,
+				346829612A035861004D9F5B /* ls5.swift in Sources */,
 				340F646D2A01C49400C50263 /* Academy_Interactive_MapApp.swift in Sources */,
+				3468296F2A0358EC004D9F5B /* ls19.swift in Sources */,
+				3468296B2A0358C6004D9F5B /* ls14-16.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
